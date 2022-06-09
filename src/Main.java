@@ -1,5 +1,5 @@
-
 import tp1.auto.*;
+import tp1.robot.*;
 
 public class Main {
 
@@ -16,6 +16,13 @@ public class Main {
         auto1.getRuedas().get(0).inflar();
         //Muestra la presion resultante
         System.out.println("\nRueda inflada!\n" + auto1.getRuedas().get(0));
+        
+        //Crea un Robot, un Hombre y hace al Hombre jugar con el Robot
+        Robot rob1 = new Robot();
+        System.out.println("\nRobot creado!\n");
+        Hombre h1 = new Hombre("Pepito");
+        System.out.println("Hombre creado!\n");
+        h1.jugarConRobot(rob1);
     }
     
 }
